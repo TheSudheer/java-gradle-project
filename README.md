@@ -212,4 +212,3 @@ pipeline {
 - The pipeline includes two stages:
   - **build jar:** Calls `buildJar()` to compile the Java application.
   - **build image:** Calls `buildImage()` with the Docker image name to build and push the Docker image.
-- This setup allows centralized management of build logic via the shared library.
