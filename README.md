@@ -211,4 +211,4 @@ pipeline {
 - The `@Library` annotation loads the shared library from the specified branch (`feature_branch`).
 - The pipeline includes two stages:
   - **build jar:** Calls `buildJar()` to compile the Java application.
-  - **build image:** Calls `buildImage()` with the Docker image name to build and push the Docker image.
+  - **build image:** Calls `buildImage()` with the Docker image name to build and push the Docker image
