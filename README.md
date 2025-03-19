@@ -211,4 +211,24 @@ pipeline {
 - The `@Library` annotation loads the shared library from the specified branch (`feature_branch`).
 - The pipeline includes two stages:
   - **build jar:** Calls `buildJar()` to compile the Java application.
-  - **build image:** Calls `buildImage()` with the Docker image name to build and push the Docker image
+  - **build image:** Calls `buildImage()` with the Docker image name to build and push the Docker image.
+
+# GitHub Webhooks Integration (Part-5: Build Automation)
+
+This section highlights the implementation and setup of **GitHub Webhooks** to automate build processes.
+
+## Overview
+The integration of GitHub Webhooks introduces seamless automation by triggering build processes whenever there are updates to the repository. This helps streamline development workflows and ensures continuous integration.
+
+## Key Features
+- **Webhook Triggers**: Configured to listen for **push events** specifically on the **Master Branch**.
+- **Build Automation**: Every time a push occurs on the Master Branch, the webhook automatically triggers the associated build pipeline.
+- **Continuous Integration**: Ensures that new code changes are quickly tested and built, providing faster feedback and maintaining code quality.
+
+## Benefits
+- **Time Efficiency**: Eliminates manual triggers and automates the build process.
+- **Workflow Optimization**: Enables seamless integration and deployment pipelines.
+- **Improved Collaboration**: Ensures that all team members are working with up-to-date builds.
+
+## Video Demonstration
+To see the automated build trigger in action, check out this [video demonstration](screenshot/build-triggers.mp4).
